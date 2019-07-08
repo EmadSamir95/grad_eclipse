@@ -8,8 +8,7 @@
 	
 	<title>Login Page</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">	
 	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/app.css"/>
 
 </head>
@@ -22,7 +21,7 @@
             
             	<img src="${pageContext.request.contextPath}/resources/images/exp.png" width="40" height="40" alt="Expert Opinion">
 
-                <h3 class="text-light mx-1 d-inline-block"><strong>Expert Opinion</strong></h3>
+                <h5 class="text-light mx-1 d-inline-block"><strong>Expert Opinion</strong></h5>
 
             </a>
 
@@ -132,14 +131,15 @@
 			    
 			    <div class="collapse" id="collapseExample2">
 			   
-			    <a href="patientFormForAdd" class="btn btn-success d-block d-sm-inline-block">As a Patient</a>
-			 	 <a href="doctorFormForAdd" class="btn btn-warning d-block d-sm-inline-block">As a Doctor</a>
-			 	  <a href="radiologyCenterFormForAdd" class="btn btn-info d-block d-sm-inline-block">As a Radiology Center</a>
+			    <a href="patientFormForAdd" class="btn btn-success d-block d-sm-inline-block mb-2">As a Patient</a>
+			 	 <a href="doctorFormForAdd" class="btn btn-warning d-block d-sm-inline-block mb-2">As a Doctor</a>
+			 	  <a href="radiologyCenterFormForAdd" class="btn btn-info d-block d-sm-inline-block mb-2">As a Radiology Center</a>
 			
 			  </div>
 			  
-			 </div>
 			</div>
+			 			 			 
+		</div>
 			
 		<section class="bg-dark py-3 mt-md-5">
 

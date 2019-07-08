@@ -20,7 +20,7 @@
             
             	<img src="${pageContext.request.contextPath}/resources/images/exp.png" width="40" height="40" alt="Expert Opinion">
 
-                <h3 class="text-light mx-1 d-inline-block"><strong>Expert Opinion</strong></h3>
+                <h5 class="text-light mx-1 d-inline-block"><strong>Expert Opinion</strong></h5>
 
             </a>
 
@@ -67,7 +67,7 @@
 
             <h3 class="display-5 mb-0">A PROFESSIONAL OPINION WITH</h3>
 
-            <h1 class="display-3">EXPERT OPINION</h1>
+            <h1 class="display-4">EXPERT OPINION</h1>
 
             <p class="lead d-none d-md-block"><strong>WE ARE HERE TO MAKE SURE OF YOUR HEALTH</strong> </p>
 
@@ -83,9 +83,9 @@
 			    
 			    <div class="collapse" id="collapseExample">
 			   
-			    <a href="patientFormForAdd" class="btn btn-success">As a Patient</a>
-			 	 <a href="doctorFormForAdd" class="btn btn-warning">As a Doctor</a>
-			 	<a href="radiologyCenterFormForAdd" class="btn btn-info">As a Radiology Center</a>
+			    <a href="patientFormForAdd" class="btn btn-success d-block d-sm-inline-block mb-2">As a Patient</a>
+			 	 <a href="doctorFormForAdd" class="btn btn-warning d-block d-sm-inline-block mb-2">As a Doctor</a>
+			 	<a href="radiologyCenterFormForAdd" class="btn btn-info d-block d-sm-inline-block mb-2">As a Radiology Center</a>
 			
 			  </div>
 			  

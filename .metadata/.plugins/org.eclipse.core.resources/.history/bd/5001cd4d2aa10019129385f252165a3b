@@ -1,0 +1,381 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/app.css"/>
+    <title>Expert Opinion</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar navbar-expand-md navbar-light">
+
+            <a href="welcome" class="navbar-brand">
+            
+            	<img src="${pageContext.request.contextPath}/resources/images/exp.png" width="40" height="40" alt="Expert Opinion">
+
+                <h5 class="text-light mx-1 d-inline-block"><strong>Expert Opinion</strong></h5>
+
+            </a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar" >
+
+            <ul class="navbar-nav ml-auto">
+
+                <li  class="nav-item">
+
+                    <a href="welcome" class="nav-link text-light"><strong>Home</strong></a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a href="#about" class="nav-link text-light"><strong>About Us</strong></a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a href="#footer" class="nav-link text-light"><strong>Contact Us</strong></a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav> 
+  
+
+    <section id="showCase" class="d-flex justify-content-center align-items-center">
+
+        <div id="overlay"></div>
+
+        <div class="conatiner text-white text-center" id="header">
+
+            <h3 class="display-5 mb-0">A PROFESSIONAL OPINION WITH</h3>
+
+            <h1 class="display-4">EXPERT OPINION</h1>
+
+            <p class="lead d-none d-md-block"><strong>WE ARE HERE TO MAKE SURE OF YOUR HEALTH</strong> </p>
+
+            <div class="row justify-content-center">
+            
+	<div class="d-block">
+			<p>
+			  <button id="start" class="btn btn-lg btn-primary px-5 mr-sm-2 m-3" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+			    Register Now</button>
+			   
+			   	<a id="start" href="patientLogin" class="btn btn-lg btn-secondary px-5 m-3">login</a>
+			</p>
+			    
+			    <div class="collapse" id="collapseExample">
+			   
+			    <a href="patientFormForAdd" class="btn btn-success d-block d-sm-inline-block">As a Patient</a>
+			 	 <a href="doctorFormForAdd" class="btn btn-warning d-block d-sm-inline-block">As a Doctor</a>
+			 	<a href="radiologyCenterFormForAdd" class="btn btn-info d-block d-sm-inline-block">As a Radiology Center</a>
+			
+			  </div>
+			  
+			 </div>
+   
+           </div>
+
+        </div>
+
+    </section>
+
+    <section id="about">
+
+        <div class="container text-center mt-4">
+
+            <h2>Join us & Get An Expert opinion</h2>
+
+            <div class="row">
+
+                <div class="col-md-4 p-3">
+
+                    <img src="" alt="" class="image-fluid d-none d-md-inline">
+
+                    <h3>Register for free!</h3>
+
+                    <p class="lead">Create a free account and get a free instance where you can upload your medical images and retrieve them when you need!</p>
+
+                </div>
+
+                <div class="col-md-4 p-3">
+
+                        <img src="" alt="" class="image-fluid d-none d-md-inline">
+
+                    <h3>Choose the Expert!</h3>
+
+                    <p class="lead">Choose the expert that you prefer to send him your medical data and get your report</p>
+
+                </div>
+
+                <div class="col-md-4 p-3">
+
+                    <img src="" alt="" class="image-fluid d-none d-md-inline">
+                    
+                    <h3>It's Totally Safe!</h3>
+
+                    <p class="lead">Don't worry we are ensuring your rights in money transfer & also a secure medical info transmission</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="bookingModal" class="modal" tabindex="-1" role="dialog">
+
+        <div class="modal-dialog" role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">Sign Up!</h5>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+
+                        <span aria-hidden="true">&times;</span>
+
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <p class="lead">Please fill in all the following fields!</p>
+
+                    <form action="user.html">
+
+                        <div class="form-group">
+
+                            <label for="userName">Username</label>
+
+                            <input type="text" class="form-control" id="userName" placeholder="Please enter your name">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="email">Email</label>
+
+                            <input type="text" class="form-control" id="email" placeholder="Email@example.com">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="password">Choose a Password</label>
+
+                            <input type="password" class="form-control" id="password" placeholder="Please enter your Password">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="userType">Register as</label>
+
+                            <select name="" id="userType" class="form-control">
+
+                                <option value="Patient">A Patient</option>
+
+                                <option value="Doctor">A Doctor</option>
+
+                                <option value="radiologyCenter">A Radiology Center</option>
+
+                            </select>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button onclick="validate()" class="btn btn-primary">Submit</button>
+
+                    <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="loginModal" class="modal" tabindex="-1" role="dialog">
+
+            <div class="modal-dialog" role="document">
+    
+                <div class="modal-content">
+    
+                    <div class="modal-header">
+    
+                        <h5 class="modal-title">Login!</h5>
+    
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+    
+                            <span aria-hidden="true">&times;</span>
+    
+                        </button>
+    
+                    </div>
+    
+                    <div class="modal-body">
+    
+                        <p class="lead">Please fill in all the following fields!</p>
+    
+                        <form>
+    
+                            <div class="form-group">
+    
+                                <label for="Email">Username or Email</label>
+    
+                                <input type="text" class="form-control" id="Email" placeholder="Username or example@email.com">
+    
+                            </div>
+    
+                            <div class="form-group">
+    
+                                <label for="Password">Password</label>
+
+                                <input type="password" class="form-control" id="Password" placeholder="Please enter your Password">
+    
+                            </div>
+    
+                        </form>
+    
+                    </div>
+    
+                    <div class="modal-footer">
+    
+                        <button onclick="validate2()" class="btn btn-primary">Login</button>
+    
+                        <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+
+    <section class="container-fluid my-3">
+
+        <div class="row">
+
+            <div class="d-none d-lg-inline col-lg-3">
+
+                <img src="${pageContext.request.contextPath}/resources/images/mri.jpg">
+
+                <p class="lead text-center">make sure you don't wear any metal wearables</p>
+
+            </div>
+
+            <div class="offset-1 d-none d-lg-inline col-lg-3">
+
+                <img src="${pageContext.request.contextPath}/resources/images/mammo.jpg">
+
+                <p class="lead text-center">Women above 40 should recheck a mammographic test every 6 months</p>
+
+    
+            </div>
+
+            <div class="offset-1 d-none d-lg-inline col-lg-3">
+
+                <img src="${pageContext.request.contextPath}/resources/images/us.jpg" class="mb-5">
+
+                <p class="lead text-center">Be sure as sometimes to go under US scan, you must not eat or drink up to 6 hours before the test!</p>
+    
+            </div>
+
+        </div>
+      
+
+    </section>
+
+
+    <section class="bg-dark py-3">
+
+        <div class="container text-white text-center">
+
+            <p class="lead">Join our mail service to be up to date with new offers!</p>
+
+            <div class="row justify-content center">
+
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4 offset-sm-1 offset-md-3 offset-lg-4">
+
+                    <div class="input-group">
+
+                        <input type="text" name="" id="" class="form-control" placeholder="youremail@example.com">
+
+                        <div class="input-group-append">
+
+                            <button class="btn btn-primary">Join Now!</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section id="footer" class="bg-secondary d-flex justify-content-center">
+
+        <ul class="nav text-center flex-column flex-sm-row">
+
+            <li class="nav-item">
+
+                <a href="#" class="nav-link text-light">FAQ</a>
+
+            </li>
+
+            <li class="nav-item ">
+
+                    <a href="#" class="nav-link text-light">Contact Us</a>
+    
+            </li>
+
+            <li class="nav-item">
+
+                    <a href="#" class="nav-link text-light" data-toggle="modal" data-target="#bookingModal">Register</a>
+    
+            </li>
+
+        </ul>
+        
+    </section>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

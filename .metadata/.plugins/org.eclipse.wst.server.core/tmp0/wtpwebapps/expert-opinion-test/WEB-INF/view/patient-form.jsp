@@ -5,12 +5,9 @@
 <html>
 	<head>
 		<meta charset="ISO-8859-1">
-		<title>Save Patient</title>
-			  
-		<style>
-			.error {color:red}
-		</style>
-			  
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Save Patient</title>  
 		<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/app.css"/>	  		
 	
 	</head>
@@ -22,7 +19,7 @@
             
             	<img src="${pageContext.request.contextPath}/resources/images/exp.png" width="40" height="40" alt="Expert Opinion">
 
-                <h3 class="text-light mx-1 d-inline-block"><strong>Expert Opinion</strong></h3>
+                <h5 class="text-light mx-1 d-inline-block"><strong>Expert Opinion</strong></h5>
 
             </a>
 
@@ -59,9 +56,7 @@
         </div>
 
     </nav> 
-
-
-	
+		
 	<div class="container offset-0 col-12 offset-sm-1 col-sm-10 offset-lg-2 col-lg-8 border my-2">
 			
 	
@@ -74,7 +69,7 @@
 				 <form:hidden path ="id"/>
 			 
 			 
-				 <table class="offset-1 col-10">
+				 <table class="offset-0 col-12 offset-md-1 col-md-10">
 					  <tbody>
 						   <tr>
 							  	<td> <label>First Name*</label></td>
@@ -129,7 +124,7 @@
 							
 							<tr>
 								<td><label></label></td>
-								<td>  <button type="submit" class="btn btn-secondary">Submit</button></td>
+								<td>  <button type="submit" class="btn btn-secondary mb-2">Submit</button></td>
 							</tr>
 						
 					  </tbody>

@@ -231,3 +231,8 @@
 0:0:0:0:0:0:0:1 - - [08/Jul/2019:02:12:19 +0200] "GET /expert-opinion/home/welcome HTTP/1.1" 200 11449
 0:0:0:0:0:0:0:1 - - [08/Jul/2019:02:12:22 +0200] "GET /expert-opinion/home/radiologyCenterFormForAdd HTTP/1.1" 200 6340
 0:0:0:0:0:0:0:1 - - [08/Jul/2019:02:12:25 +0200] "GET /expert-opinion/home/welcome HTTP/1.1" 200 11449
+127.0.0.1 - - [08/Jul/2019:03:40:35 +0200] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [08/Jul/2019:03:40:36 +0200] "GET /expert-opinion/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [08/Jul/2019:03:40:37 +0200] "GET /expert-opinion/home/welcome HTTP/1.1" 200 11449
+0:0:0:0:0:0:0:1 - - [08/Jul/2019:03:41:43 +0200] "GET /expert-opinion/home/welcome HTTP/1.1" 200 11449
+0:0:0:0:0:0:0:1 - - [08/Jul/2019:03:41:46 +0200] "GET /favicon.ico HTTP/1.1" 404 1085

@@ -4,7 +4,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+			<meta charset="ISO-8859-1">
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Save Doctor</title>
  <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/app.css"/>
 		  
@@ -17,7 +19,7 @@
             
             	<img src="${pageContext.request.contextPath}/resources/images/exp.png" width="40" height="40" alt="Expert Opinion">
 
-                <h3 class="text-light mx-1 d-inline-block"><strong>Expert Opinion</strong></h3>
+                <h5 class="text-light mx-1 d-inline-block"><strong>Expert Opinion</strong></h5>
 
             </a>
 
@@ -67,7 +69,7 @@
 							 
 				<form:hidden path ="id"/>						 
 				
-				<table class="offset-1 col-10">
+				<table class="offset-0 col-12 offset-md-1 col-md-10">
 					 <tbody>
 					 	  <tr>
 						  	<td> <label>Username*</label> </td>

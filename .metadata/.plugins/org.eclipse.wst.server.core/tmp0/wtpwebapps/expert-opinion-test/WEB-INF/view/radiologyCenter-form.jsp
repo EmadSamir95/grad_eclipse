@@ -4,7 +4,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+			<meta charset="ISO-8859-1">
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Save Patient</title>		
  <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/app.css"/>
  
@@ -18,7 +20,7 @@
             
             	<img src="${pageContext.request.contextPath}/resources/images/exp.png" width="40" height="40" alt="Expert Opinion">
 
-                <h3 class="text-light mx-1 d-inline-block"><strong>Expert Opinion</strong></h3>
+                <h5 class="text-light mx-1 d-inline-block"><strong>Expert Opinion</strong></h5>
 
             </a>
 
@@ -58,7 +60,7 @@
 	
 	<div class="container offset-0 col-12 offset-sm-1 col-sm-10 offset-lg-2 col-lg-8 border my-2">
 	
-		<h3 class="offset-sm-1 col-sm-10 offset-md-2 col-md-8 d-flex justify-content-center border mb-3"> Save Radiology Center</h3>
+		<h4 class="offset-sm-1 col-sm-10 offset-md-2 col-md-8 d-flex justify-content-center border mb-3"> Save Radiology Center</h4>
 		
 		<form:form action="saveRadiologyCenter" modelAttribute="radiologyCenter" method="POST">
 			
@@ -67,7 +69,7 @@
 		  there is a severe shortage of musculoskeletal radiologists, physicians trained to interpret MRIs of the bones and joints.	</p>
 		 <p class="d-flex justify-content-left mt-lg-4 mt-md-2 text-secondary mb-4">Fill out the form. Asterisk (*) means required.</p>
 		
-			 <table class="offset-1 col-10">
+			 <table class="offset-md-1 col-md-10">
 				  <tbody>
 					   <tr>
 						  	<td> <label>Name*</label> </td>
@@ -119,7 +121,7 @@
 		
 						<tr>
 							<td><label></label></td>
-							<td><button type="submit" class="btn btn-secondary mt-3">submit</button><td>
+							<td><button type="submit" class="btn btn-secondary mt-3 mb-2">submit</button><td>
 						</tr>
 			
 				  </tbody>	 
