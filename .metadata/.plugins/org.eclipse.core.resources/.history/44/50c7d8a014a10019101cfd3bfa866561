@@ -1,0 +1,338 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Save Doctor</title>
+ <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/app.css"/>
+		  
+</head>
+<body>
+
+	    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-2">
+	    
+				<a href="welcome" class="navbar-brand">
+            
+            	<img src="${pageContext.request.contextPath}/resources/images/exp.png" width="40" height="40" alt="Expert Opinion">
+
+                <h3 class="text-light mx-1 d-inline-block"><strong>Expert Opinion</strong></h3>
+
+            </a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar" >
+
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+
+                    <a href="welcome" class="nav-link text-light">Home</a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a href="#about" class="nav-link text-light">About Us</a>
+
+                </li>
+
+                <li class="nav-item">
+
+                    <a href="#footer" class="nav-link text-light">Contact Us</a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav> 
+	
+	<div class="container offset-0 col-12 offset-sm-1 col-sm-10 offset-lg-2 col-lg-8 border my-2">
+
+		<h3 class="d-flex justify-content-center border offset-2 col-8 mb-4">DOCTORS JOIN US</h3>
+			<p class="text-primary mb-3">We are presently recruiting medical doctors and other medical professionals (dentists, podiatrists etc) in all specialties and subspecialties
+			 to provide second opinion and telemedicine consultations</p>
+			<p class="d-flex justify-content-left mt-lg-4 mt-md-2 text-secondary mb-4">Fill out the form. Asterisk (*) means required.</p>
+			
+			<form:form action ="saveDoctor" modelAttribute="doctor" method="POST">
+			
+							 
+				<form:hidden path ="id"/>						 
+				
+				<table class="offset-1 col-10">
+					 <tbody>
+					 	  <tr>
+						  	<td> <label>Username*</label> </td>
+						  	<td> <form:input path="userName" class="form-control"/> </td>
+						  	<td><form:errors path="userName" cssClass="error text-danger ml-2"/></td>
+						  </tr>
+						  
+						  <tr>
+						  	<td> <label>First Name*</label> </td>
+						  	<td> <form:input path="firstName" class="form-control mt-2"/> </td>
+						  	<td><form:errors path="firstName" cssClass="error text-danger ml-2"/></td>
+						  </tr>
+						 
+						  <tr>
+						  	<td> <label>Last Name*</label> </td>
+						  	<td> <form:input path="lastName" class="form-control mt-2"/> </td>
+						  	<td><form:errors path="lastName" cssClass="error text-danger ml-2"/></td>
+						  </tr>
+						 
+						  <tr>
+					   		<td><label>Gender*</label></td>   
+						    <td><form:select path="gender" class="form-control mt-2">
+								   <form:option value="male" label="Male"/>
+								   <form:option value="female" label="Female"/>
+								</form:select></td>    
+						    <td><form:errors path="gender" cssClass="error text-danger ml-2"/></td>
+						   </tr>
+						 
+						  <tr>
+						  	<td> <label>Age*</label> </td>
+						  	<td> <form:input path="age" class="form-control mt-2"/> </td>
+						  	<td><form:errors path="age" cssClass="error text-danger ml-2"/></td>
+						  </tr>
+	 					  
+	 					  <tr>
+						  	<td> <label>Mail*</label> </td>
+						  	<td> <form:input path="mail" class="form-control mt-2"/> </td>
+						  	<td><form:errors path="mail" cssClass="error text-danger ml-2"/></td>
+						  </tr>
+	 					  
+	 					  <tr>
+							   	<td><label>Phone number1*</label></td>
+							   	<td><form:input path="phoneNumber1" placeholder="example@example.com" class="form-control mt-2"/></td>
+							   	<td><form:errors path="phoneNumber1" cssClass="error text-danger ml-2"/></td>	   
+						   </tr>
+						  
+						  <tr>
+						  	<td> <label>Phone number2*</label> </td>
+						  	<td> <form:input path="phoneNumber2" class="form-control mt-2"/> </td>
+						  	<td><form:errors path="phoneNumber2" cssClass="error text-danger ml-2"/></td>
+						  </tr>
+						  
+						  <tr>
+							  	<td><label>Password*</label> </td>
+							  	<td><form:password path="password"  class="form-control mt-2"/></td>
+							  	<td><form:errors path="password" cssClass="error text-danger ml-2"/></td>	
+						   </tr>
+						   
+						   <tr>
+							  	<td><label>Confirm password*</label> </td>
+							  	<td><form:password path="confirmPassword" class="form-control mt-2"/></td>
+							  	<td><form:errors path="confirmPassword" cssClass="error text-danger ml-2"/></td>	
+						   </tr>
+						  
+						  <tr>
+						  	<td> <label>Collage*</label> </td>
+						  	<td> <form:input path="collage" class="form-control mt-2"/> </td>
+						  	<td><form:errors path="collage" cssClass="error text-danger ml-2"/></td>
+						  </tr>
+						  
+						  <tr>
+						   		<td><label>Year of Graduation*</label></td>   
+							    <td><form:select path="yearOfGraduation" class="form-control mt-2">
+                     				   <form:options items = "${yearList}" />
+									</form:select></td>    
+							    <td><form:errors path="yearOfGraduation" cssClass="error text-danger ml-2"/></td>
+						   </tr>
+						  
+						  <tr>
+						  	<td> <label>Degree*</label> </td>
+						  	<td> <form:input path="degree" class="form-control mt-2"/> </td>
+						  	<td><form:errors path="degree" cssClass="error text-danger ml-2"/></td>
+						  </tr>
+						  
+						  <tr>
+						  	<td> <label>Other degree/s(optional)</label> </td>
+						  	<td> <form:textarea  path="otherDegree" rows="5" column="60" class="form-control mt-2"/> </td>
+						  	<td><form:errors path="otherDegree" cssClass="error text-danger ml-2"/></td>
+						  </tr>
+	 					  
+	 					  <tr>
+					   		<td><label>Specialties 1*</label></td>   
+						    <td><form:select path="specialist1" class="form-control mt-2">
+								   <form:option value="" label="------- Select -------"/>
+                    			   <form:options items = "${speciaist}" />
+								</form:select></td>    
+						    <td><form:errors path="specialist1" cssClass="error text-danger ml-2"/></td>
+						   </tr>
+						   
+						   <tr>
+					   		<td><label>Specialties 2</label></td>   
+						    <td><form:select path="specialist2" class="form-control mt-2">
+						    	   <form:option value="" label="------- Select -------"/>
+                    			   <form:options items = "${speciaist}" />
+								</form:select></td>    
+						    <td><form:errors path="specialist2" cssClass="error text-danger ml-2"/></td>
+						   </tr>	
+						   
+						   <tr>
+					   		<td><label>Specialties 3</label></td>   
+						    <td><form:select path="specialist3" class="form-control mt-2">
+						    	   <form:option value="" label="------- Select -------"/>
+                    			   <form:options items = "${speciaist}" />
+								</form:select></td>    
+						    <td><form:errors path="specialist3" cssClass="error text-danger ml-2"/></td>
+						   </tr>
+						   
+						   <tr>
+					   		<td><label>SubSpecialist 1</label></td>   
+						    <td><form:select path="subSpecialist1" class="form-control mt-2">
+						    	   <form:option value="" label="------- Select -------"/>
+                    			   <form:options items = "${speciaist}" />
+								</form:select></td>    
+						    <td><form:errors path="subSpecialist1" cssClass="error text-danger ml-2"/></td>
+						   </tr>
+						   
+						   <tr>
+					   		<td><label>SubSpecialties 2</label></td>   
+						    <td><form:select path="subSpecialist2" class="form-control mt-2">
+						    	   <form:option value="" label="------- Select -------"/>
+                    			   <form:options items = "${speciaist}" />
+								</form:select></td>    
+						    <td><form:errors path="subSpecialist2" cssClass="error text-danger ml-2"/></td>
+						   </tr>
+						 
+						 <tr>
+					   		<td><label>SubSpecialties 3</label></td>   
+						    <td><form:select path="subSpecialist3" class="form-control mt-2">
+						    	   <form:option value="" label="------- Select -------"/>
+                    			   <form:options items = "${speciaist}" />
+								</form:select></td>    
+						    <td><form:errors path="subSpecialist3" cssClass="error text-danger ml-2"/></td>
+						   </tr>
+						 
+						  <tr>
+						  	<td> <label>Awards and Accomplishments</label> </td>
+						  	<td> <form:textarea  path="awardsAndAccomplishments" rows="5" column="60" class="form-control mt-2"/> </td>
+						  </tr>								
+			               <tr>		                
+			                <td><label>Best Time to Contact</label></td>
+			                <td>
+				                 <form:checkbox path = "bestTimeToContact" value="one" cssClass="ml-2"/><p class="ml-1 d-inline">Morning</p>
+				               	 <form:errors path="bestTimeToContact" cssClass="error text-danger"/>
+			                </td> 
+			              </tr>	
+			               <tr>		                
+			                <td><label></label></td>
+			                <td>
+				                 <form:checkbox path = "bestTimeToContact" value="one" cssClass="ml-2"/><p class="ml-1 d-inline">Midday</p>
+				               	 <form:errors path="bestTimeToContact" cssClass="error text-danger"/>
+			                </td> 
+			              </tr>
+			               <tr>		                
+			                <td><label></label></td>
+			                <td>
+				                 <form:checkbox path = "bestTimeToContact" value="one" cssClass="ml-2"/><p class="ml-1 d-inline">After midday</p>
+				               	 <form:errors path="bestTimeToContact" cssClass="error text-danger"/>
+			                </td> 
+			              </tr>
+			                       <tr>		                
+			                <td><label></label></td>
+			                <td>
+				                 <form:checkbox path = "bestTimeToContact" value="one" cssClass="ml-2"/><p class="ml-1 d-inline">Night</p>
+				               	 <form:errors path="bestTimeToContact" cssClass="error text-danger"/>
+			                </td> 
+			              </tr>  
+
+	              		<tr>
+			                 <td><label>Time to Respond</label></td>
+			                 <td>
+			                    <form:select path = "responseTime" class="form-control mt-2">
+			                       <form:options items = "${responseTime}" />
+			                    </form:select>     	
+			                 </td>
+			                 <td><form:errors path="responseTime" cssClass="error text-danger"/></td> 
+			              </tr> 	
+			              
+			              <tr>
+						  	<td> <label>Fellowship</label> </td>
+						  	<td> <form:input path="Fellowship" class="form-control mt-2"/> </td>
+						  	<td><form:errors path="Fellowship" cssClass="error text-danger ml-2"/></td>
+						  </tr>		 				 
+					 
+							<tr>
+								<td><label></label></td>
+								<td><button type="submit" class="btn btn-secondary mt-3">submit</button><td>
+							</tr>
+					 </tbody>							
+				</table>														
+		</form:form>	
+			
+			<p>
+				<a class="btn btn-outline-primary" href="${pageContext.request.contextPath}/home/welcome">Back to List</a>
+			</p>
+	</div>
+	
+				  <section class="bg-dark py-3">
+
+        <div class="container text-white text-center">
+
+            <p class="lead">Join our mail service to be up to date with new offers!</p>
+
+            <div class="row justify-content center">
+
+                <div class="col-12 col-sm-10 col-md-6 col-lg-4 offset-sm-1 offset-md-3 offset-lg-4">
+
+                    <div class="input-group">
+
+                        <input type="text" name="" id="" class="form-control" placeholder="youremail@example.com">
+
+                        <div class="input-group-append">
+
+                            <button class="btn btn-primary">Join Now!</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+    </section>
+		
+		
+		  <section id="footer" class="bg-secondary d-flex justify-content-center">
+
+        <ul class="nav text-center flex-column flex-sm-row">
+
+            <li class="nav-item">
+
+                <a href="#" class="nav-link text-light">FAQ</a>
+
+            </li>
+
+            <li class="nav-item ">
+
+                    <a href="#" class="nav-link text-light">Contact Us</a>
+    
+            </li>
+
+            <li class="nav-item">
+
+                    <a href="#" class="nav-link text-light" data-toggle="modal" data-target="#bookingModal">Register</a>
+    
+            </li>
+
+        </ul>
+        
+    </section>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>		
+</body>
+</html>

@@ -34,7 +34,7 @@
 
                 <li class="nav-item">
 
-                    <a href="index.html" class="nav-link text-light">Home</a>
+                    <a href="welcome" class="nav-link text-light">Home</a>
 
                 </li>
 
@@ -58,7 +58,7 @@
 	
 	<div class="container offset-0 col-12 offset-sm-1 col-sm-10 offset-lg-2 col-lg-8 border my-2">
 	
-		<h3 class="offset-2 col-8 d-flex justify-content-center border mb-3"> Save RadiologyCenter</h3>
+		<h3 class="offset-sm-1 col-sm-10 offset-md-2 col-md-8 d-flex justify-content-center border mb-3"> Save Radiology Center</h3>
 		
 		<form:form action="saveRadiologyCenter" modelAttribute="radiologyCenter" method="POST">
 			
@@ -130,7 +130,7 @@
 
 		
 			<p>
-				<a class="btn btn-outline-primary" href="${pageContext.request.contextPath}/home/welcome">Back to List</a>
+				<a class="btn btn-outline-primary" href="${pageContext.request.contextPath}/home/welcome">Back to Home</a>
 			</p>
 		
 	</div>

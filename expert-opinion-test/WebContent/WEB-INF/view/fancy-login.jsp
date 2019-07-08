@@ -38,7 +38,7 @@
 
                 <li class="nav-item">
 
-                    <a href="index.html" class="nav-link text-light">Home</a>
+                    <a href="welcome" class="nav-link text-light">Home</a>
 
                 </li>
 
