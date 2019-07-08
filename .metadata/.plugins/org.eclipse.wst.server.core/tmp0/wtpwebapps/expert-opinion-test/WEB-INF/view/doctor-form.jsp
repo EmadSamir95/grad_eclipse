@@ -59,7 +59,7 @@
 	
 	<div class="container offset-0 col-12 offset-sm-1 col-sm-10 offset-lg-2 col-lg-8 border my-2">
 
-		<h3 class="d-flex justify-content-center border offset-sm-1 col-sm-10 offset-md-2 col-md-8 mb-4">DOCTORS JOIN US</h3>
+		<h4 class="d-flex justify-content-center border offset-sm-1 col-sm-10 offset-md-2 col-md-8 my-2">Doctors Join Us</h4>
 			<p class="text-primary mb-3">We are presently recruiting medical doctors and other medical professionals (dentists, podiatrists etc) in all specialties and subspecialties
 			 to provide second opinion and telemedicine consultations</p>
 			<p class="d-flex justify-content-left mt-lg-4 mt-md-2 text-secondary mb-4">Fill out the form. Asterisk (*) means required.</p>

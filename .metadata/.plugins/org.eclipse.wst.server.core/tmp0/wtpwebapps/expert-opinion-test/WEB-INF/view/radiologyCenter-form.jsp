@@ -60,7 +60,7 @@
 	
 	<div class="container offset-0 col-12 offset-sm-1 col-sm-10 offset-lg-2 col-lg-8 border my-2">
 	
-		<h4 class="offset-sm-1 col-sm-10 offset-md-2 col-md-8 d-flex justify-content-center border mb-3"> Save Radiology Center</h4>
+		<h4 class="offset-sm-1 col-sm-10 offset-md-2 col-md-8 d-flex justify-content-center border my-2"> Save Radiology Center</h4>
 		
 		<form:form action="saveRadiologyCenter" modelAttribute="radiologyCenter" method="POST">
 			
